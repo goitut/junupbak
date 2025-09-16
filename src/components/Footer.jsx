@@ -1,63 +1,37 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { FaFacebook } from "react-icons/fa";
-import { IoLogoTwitter } from "react-icons/io";
-import { FaInstagram } from "react-icons/fa";
-import { MdOutlineBakeryDining } from "react-icons/md";
+import { BsTwitterX } from "react-icons/bs";
+import { FaInstagram } from "react-icons/fa6";
+
+
 
 
 function Footer() {
   return (
     <>
-      <section className=' px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8  shadow-md '>
-        <div className='text-center text-md-start '>
-          <div className='mt-3'>
-            <div  className=' mb-1'>
-              <h6 className='text-uppercase fw-bold '>
-                Company name <MdOutlineBakeryDining />
-              </h6>
-              <p>
-                Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit
-                amet, consectetur adipisicing elit.
-              </p>
-            </div>
-            <div className='flex gap-3'>
-              <div className='block mb-4'>
-                <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
-                <p><Link to="/">Home   </Link></p>
-                <p> <Link to="/menus"> Menus </Link></p>
-                <p><Link to="/about">  About Us  </Link> </p>
-                <p><Link to="/contact"> Contact </Link> </p>
-              </div>
+      <footer class="bg-amber-100 flex flex-col space-y-10 justify-center m-10  bottom-0 shadow-md">
 
-              <div className='block mb-md-0 mb-4'>
-                <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
-                <p>New York, NY 10012, US</p>
-                <p>  junupbak@gmail.com   </p>
-                <p>+ 01 234 567 88</p>
-                <p>+ 01 234 567 89  </p>
-              </div>
+    <nav class="flex justify-center flex-wrap gap-6 text-gray-500 font-medium mt-1">
+      <Link to="/" className='hover:text-gray-900'>Home</Link>
+      <Link to="/menu" className='hover:text-gray-900'>Menu</Link>
+      <Link to="/about" className='hover:text-gray-900'>About Us</Link>
+      <Link to="/contact" className='hover:text-gray-900'>Contact Us</Link>
+    </nav>
 
-              <div className=' text-left block'>
-                <div className=' ml-2'>
-                  <span>Get connected with us on social networks:</span>
-                </div>
-                <div className=' block gap-6 text-5xl '>
-                  <Link to="www.facebook.com" className='text-blue-700' >
-                    <FaFacebook />
-                  </Link>
-                  <Link to="/" className='' >
-                    <IoLogoTwitter />
-                  </Link>
-                  <Link to="/" className='' >
-                    <FaInstagram />
-                  </Link>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <div class="flex justify-center space-x-5">
+        <Link to="www.facebook.com" target='_blank'>
+            <FaFacebook />
+        </Link>
+        <Link to="www.twitter.com" target='_blank'>
+            <BsTwitterX />
+        </Link>
+        <Link to="www.instagram.com" target='_blank'>
+            <FaInstagram />
+        </Link>
+    </div>
+    <p class="text-center text-gray-700 font-medium">&copy; 2025 Junupbak Ltd. All rights reservered.</p>
+</footer>
     </>
   )
 }

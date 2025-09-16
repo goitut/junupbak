@@ -40,18 +40,18 @@ function Navbar() {
           className={`${isOpen ? 'flex' : 'hidden'} w-full flex-col py-2 md:flex md:w-auto md:flex-row md:items-center md:space-x-4 md:py-0`}
         >
           <Link to="/" className="block w-full text-center md:w-auto text-gray-600 hover:text-blue-600 px-3 py-3 md:py-2 rounded-md text-sm font-medium">Home</Link>
-          <Link to="/menus" className="block w-full text-center md:w-auto text-gray-600 hover:text-blue-600 px-3 py-3 md:py-2 rounded-md text-sm font-medium">Menu</Link>
+          <Link to="/menu" className="block w-full text-center md:w-auto text-gray-600 hover:text-blue-600 px-3 py-3 md:py-2 rounded-md text-sm font-medium">Menu</Link>
           <Link to="/about" className="block w-full text-center md:w-auto text-gray-600 hover:text-blue-600 px-3 py-3 md:py-2 rounded-md text-sm font-medium">About Us</Link>
           <Link to="/contact" className="block w-full text-center md:w-auto text-gray-600 hover:text-blue-600 px-3 py-3 md:py-2 rounded-md text-sm font-medium">Contact Us</Link>
           {/* <Link to="/users" className="block w-full text-center md:w-auto text-gray-600 hover:text-blue-600 px-3 py-3 md:py-2 rounded-md text-sm font-medium">Users</Link> */}
           <Link to="/dashboard" className="block w-full text-center md:w-auto text-gray-600 hover:text-blue-600 px-3 py-3 md:py-2 rounded-md text-sm font-medium">Dashboard</Link>
 
         </div>
-        <div className='flex gap-1'>
-          <Link to="">
+        <div className='flex gap-4 ml-4'>
+          <Link to="/login" >
               <ImUser />
           </Link>
-          <Link to="">
+          <Link to="cart">
               <BiCartAdd />
           </Link>
         </div>
