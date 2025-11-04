@@ -9,6 +9,7 @@ import Login from "./components/Login"
 import Create from "./components/Create"
 import Cart from "./components/Cart"
 import Dashboard from "./components/Dashboard"
+import New from "./components/New"
 
 
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/create" element={<Create />} />
             <Route path="/cart" element={<Cart />} />
             <Route path="/dashboard" element={<Dashboard />} />
+             <Route path="/new" element={<New />} />
         </Routes>
         <Footer />
       </Router>
